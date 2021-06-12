@@ -20,6 +20,7 @@ pipeline {
         }
 		 stage('Build Archive') {
             steps {
+		sh '''pwd'''
                 archiveArtifacts artifacts: 'test', followSymlinks: false
             }
         }
