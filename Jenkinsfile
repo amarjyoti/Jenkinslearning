@@ -16,6 +16,7 @@ pipeline {
                 sh '''mkdir test
                     cd test
                     touch file1 file2 file3
+		    cd ..
 		    zip -r test.zip test'''
             }
         }
