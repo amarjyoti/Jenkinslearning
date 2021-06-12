@@ -17,5 +17,11 @@ pipeline {
                     touch file1 file2 file3'''
             }
         }
+		 stage('Build Archive') {
+            steps {
+                archiveArtifacts artifacts: 'test', followSymlinks: false
+            }
+        }
+		
     }
 }
