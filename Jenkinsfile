@@ -1,11 +1,13 @@
 pipeline {
     agent any
 	cleanWs()
+        
 
     stages {
-        stage('Hello Step1') {
+        stage('Clean Workspace') {
             steps {
-                echo 'Hello World Step1'
+		echo 'Clean Workspace'
+                cleanWs()
             }
         }
         
