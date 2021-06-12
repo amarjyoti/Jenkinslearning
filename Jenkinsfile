@@ -1,5 +1,6 @@
 pipeline {
     agent any
+	cleanWs()
 
     stages {
         stage('Hello Step1') {
